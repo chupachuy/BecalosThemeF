@@ -1,0 +1,423 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #000;
+    transition: .35s;
+}
+
+
+ul.navbar-nav.ml-auto {
+    text-align: center;
+}
+
+.icons-social-media{
+  background-color: red;
+  margin: 5px;
+}
+
+
+.nav-flex-icons ul{
+  text-align: center;
+  background-color: white;
+}
+
+.nav-flex-icons ul li{
+  text-align: center;
+  background-color: white;
+}
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #FFF; }
+
+.logo-thumb img{
+  width: 120%;
+  height: auto;
+}
+
+.logo-grande img{
+  width: 80%;
+  height: auto;
+}
+
+.separar{
+  height: 22px;
+}
+
+.separacion-grande{
+  height: 90px;
+}
+
+
+/**** SE AUNMENTO ***/
+/***** EXCERPT NOTICIAS **/
+
+.text_4_menu_post_not{
+  min-height: 200px;
+}
+
+.title_noticias{
+  min-height: 65px;
+}
+
+.tags-category a:link{
+  font-size: 1em;
+    font-family: Montserrat-SemiBold;
+    color: #666;
+}
+
+.tags-category a:visited{
+  font-size: 1em;
+    font-family: Montserrat-SemiBold;
+    color: #666;
+}
+
+.text_5_menu_post_no a:link{
+  font-size: 1em;
+    font-family: Montserrat-SemiBold;
+    color: #AA00FF;
+    margin-top: -1.2em
+}
+
+.text_5_menu_post_no a:visited{
+  font-size: 1em;
+    font-family: Montserrat-SemiBold;
+    color: #AA00FF;
+    margin-top: -1.2em
+}
+
+.label-category{
+  /*background-color: red;*/
+  min-height: 38px;
+  padding-top: 10px;
+}
+.blog_not_text_3{
+  min-height: 65px;
+}
+
+.blog_not_text_4{
+  min-height: 160px;
+}
+
+.sin_padd img{
+  width: 100%;
+  height: auto;
+}
+
+
+.vidas-inspiran .card-body{
+  max-height: 170px;
+}
+
+
+.logos-fila-1{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*.navbar i{
+  position: relative;
+  left: 15px;
+}*/
+
+.vidas-que-inspiran p{
+  font-family: Montserrat-Regular;
+  color: #666;
+  font-size: 2em;
+
+}
+
+
+.millones-de-jovenes p{
+  font-family: Roboto-Regular;
+    font-size: 1.8em;
+    color: #333333;
+}
+
+/**** DISTINTIVOS ***/
+
+.dist .distintivo-talento, .dist .distintivo-english-challenge, .dist .distintivo-movilidad, .dist .distintivo-becas-de-excelencia, .dist .distintivo-desafio-b21, .dist .distintivo-capacitacion-docente, .dist .desarrollo-de-competencias, .dist .distintivo-default {
+  height: 10px;
+  background-color: red;
+}
+
+.dist .distintivo-talento{
+  background-color: #2979FF;
+}
+
+.dist .distintivo-english-challenge{
+  background-color: #3D5AFE;
+}
+
+.dist .distintivo-movilidad{
+   background-color: #651FFF;
+}
+
+.dist .distintivo-becas-de-excelencia{
+  background-color: #673AB7;
+}
+
+.dist .distintivo-desafio-b21{
+  background-color: #AA00FF;
+}
+
+.dist .distintivo-capacitacion-docente{
+  background-color: #D500F9;
+}
+
+.dist .desarrollo-de-competencias{
+  background-color: #EA80FC;
+}
+
+.dist .distintivo-default{
+  background-color: #ccc;
+}
+
+.distintivo{
+  /*background-color: red;*/
+}
+.distintivo img{
+  width: 100%;
+}
+
+.label-category{
+  text-align: middle;
+}
+
+a.preguntas_frecuentes {
+    color: #3D99DA;
+    cursor: pointer;
+    /* text-decoration: underline; */
+    border: solid .5px #3d99da33;
+    padding: 7px;
+}
+
+a.btn-programas{
+      padding: 6px 10px;
+      border: solid .5px #5c5edc;
+      color: #5c5edc;
+}
+
+.btn-programas:hover{
+  border: solid .5px #5c5edc;
+  color: #fff;
+  background-color: #5c5edc;
+
+}
+
+/*.flexbox .filter {
+    text-align: -webkit-center !important;
+}*/
+
+.filter button{
+  
+}
+
+a.btn-programas{
+      padding: 3px 8px !important;
+      border: solid .5px #5c5edc;
+      color: #5c5edc;
+}
+
+.btn-programas:hover{
+  border: solid .5px #5c5edc;
+  color: #fff;
+  background-color: #5c5edc;
+
+}
+
+button#tod {
+     padding: 3px 8px !important;
+      border: solid .5px #5c5edc;
+      color: #5c5edc;
+}
+button#tod:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #5c5edc;
+      background-color: #5c5edc;
+      color: #fff;
+}
+
+
+button#bde {
+     padding: 3px 8px !important;
+      border: solid .5px #673AB7;
+      color: #673AB7;
+}
+
+button#bde:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #673AB7;
+      background-color: #673AB7;
+      color: #fff;
+}
+
+button#tal {
+     padding: 3px 8px !important;
+      border: solid .5px #2979FF;
+      color: #2979FF;
+}
+button#tal:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #2979FF;
+      background-color: #2979FF;
+      color: #fff;
+}
+
+button#ech {
+     padding: 3px 8px !important;
+      border: solid .5px #3D5AFE;
+      color: #3D5AFE;
+}
+button#ech:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #3D5AFE;
+      background-color: #3D5AFE;
+      color: #fff;
+}
+
+button#mov {
+     padding: 3px 8px !important;
+      border: solid .5px #651FFF;
+      color: #651FFF;
+}
+button#mov:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #651FFF;
+      background-color: #651FFF;
+      color: #fff;
+}
+
+button#db21 {
+     padding: 3px 8px !important;
+      border: solid .5px #AA00FF;
+      color: #AA00FF;
+}
+button#db21:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #AA00FF;
+      background-color:  #AA00FF;
+      color: #fff;
+}
+
+button#cad {
+     padding: 3px 8px !important;
+      border: solid .5px #D500F9;
+      color: #D500F9;
+}
+button#cad:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #D500F9;
+      background-color: #D500F9;
+      color: #fff;
+}
+
+button#ddc {
+     padding: 3px 8px !important;
+      border: solid .5px #EA80FC;
+      color: #EA80FC;
+}
+button#ddc:hover {
+     padding: 3px 8px !important;
+      border: solid .5px #EA80FC;
+      background-color: #EA80FC;
+      color: #fff;
+}
+
+.bar {
+    top: 4em !important;
+}
+
+
+button:focus {
+    outline: none !important;
+}
+
+@media (max-width: 576px) { 
+  body{
+    
+  }
+
+  .formNum {
+    font-size: 1.8em;
+}
+
+section.grid {
+    top: 20em !important;
+}
+
+.bar {
+    padding: 1.4em 1em;
+    top: 2.8em !important;
+
+}
+
+}
+
+@media (max-width: 768px) { 
+
+
+.lis_men {
+     margin-left: 0 !important;
+}
+
+}
+
+
+@media (min-width: 768px) { 
+body{
+  
+}
+.bar {
+    padding: 1.4em 1em;
+    top: 8em !important;
+
+  }
+
+  .flexbox .filter {
+    text-align: -webkit-center !important;
+}
+
+
+
+}
+
+@media (min-width: 1024px) { 
+body{
+  
+}
+.bar {
+    padding: 1.4em 1em;
+    top: 8em !important;
+
+  }
+
+}
+
+@media (min-width: 1220px) { 
+body{
+ 
+}
+.bar {
+    padding: 1.4em 1em;
+    top: 6em !important;
+
+  }
+
+}
+

@@ -1,0 +1,1639 @@
+/*  ____________________________ FUENTES ____________________________  */
+/* Títulos, Subtítulos, CTA y frases a resaltar */
+@font-face { font-family: Montserrat-Black; src: url('../font/montserrat/Montserrat-Black.ttf'); }
+@font-face { font-family: Montserrat-BlackItalic; src: url('../font/montserrat/Montserrat-BlackItalic.ttf'); }
+@font-face { font-family: Montserrat-Bold; src: url('../font/montserrat/Montserrat-Bold.ttf'); }
+@font-face { font-family: Montserrat-BoldItalic; src: url('../font/montserrat/Montserrat-BoldItalic.ttf'); }
+@font-face { font-family: Montserrat-ExtraBold; src: url('../font/montserrat/Montserrat-ExtraBold.ttf'); }
+@font-face { font-family: Montserrat-ExtraBoldItalic; src: url('../font/montserrat/Montserrat-ExtraBoldItalic.ttf'); }
+@font-face { font-family: Montserrat-ExtraLight; src: url('../font/montserrat/Montserrat-ExtraLight.ttf'); }
+@font-face { font-family: Montserrat-ExtraLightItalic; src: url('../font/montserrat/Montserrat-ExtraLightItalic.ttf'); }
+@font-face { font-family: Montserrat-Italic; src: url('../font/montserrat/Montserrat-Italic.ttf'); }
+@font-face { font-family: Montserrat-Light; src: url('../font/montserrat/Montserrat-Light.ttf'); }
+@font-face { font-family: Montserrat-LightItalic; src: url('../font/montserrat/Montserrat-LightItalic.ttf'); }
+@font-face { font-family: Montserrat-Medium; src: url('../font/montserrat/Montserrat-Medium.ttf'); }
+@font-face { font-family: Montserrat-MediumItalic; src: url('../font/montserrat/Montserrat-MediumItalic.ttf'); }
+@font-face { font-family: Montserrat-Regular; src: url('../font/montserrat/Montserrat-Regular.ttf'); }
+@font-face { font-family: Montserrat-SemiBold; src: url('../font/montserrat/Montserrat-SemiBold.ttf'); }
+@font-face { font-family: Montserrat-SemiBoldItalic; src: url('../font/montserrat/Montserrat-SemiBoldItalic.ttf'); }
+@font-face { font-family: Montserrat-Thin; src: url('../font/montserrat/Montserrat-Thin.ttf'); }
+@font-face { font-family: Montserrat-ThinItalic; src: url('../font/montserrat/Montserrat-ThinItalic.ttf'); }
+/* Texto en general */
+@font-face { font-family: Roboto-Bold; src: url('../font/roboto/Roboto-Bold.ttf'); }
+@font-face { font-family: Roboto-Light; src: url('../font/roboto/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto-Medium; src: url('../font/roboto/Roboto-Medium.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('../font/roboto/Roboto-Regular.ttf'); }
+@font-face { font-family: Roboto-Thin; src: url('../font/roboto/Roboto-Thin.ttf'); }
+/*  ____________________________ FUENTES ____________________________  */
+
+
+/*  ____________________________ GENERALES ____________________________  */
+p{
+	font-family: Roboto-Regular;
+}
+.h2_gris{
+	font-size: 2em;
+	font-family: Montserrat-Medium;
+	color: #666;
+}
+.h3_gris{
+	font-family: Montserrat-Regular;
+	color: #666;
+}
+.h4_gris{
+	font-family: Montserrat-Medium;
+	color: #666;
+}
+.h5_gris{
+	font-family: Montserrat-Medium;
+	color: #666;
+}
+.p_ti_card{
+	font-size: 1em;
+	font-family: Montserrat-Medium;
+	color: #666;
+}
+.h2_bl{
+	font-size: 2em;
+	font-family: Montserrat-Medium;
+	color: #FFF;
+}
+.text_azul{
+	color: #3D99DA;
+}
+.tam_2{
+	font-size: 1.4em;
+}
+.sin_padd{
+	padding: 0;
+	margin: 0;
+}
+
+.titu_sec{
+	font-size: 2em;
+    font-family: Montserrat-Medium;
+    color: #666;
+}
+
+.tex_bas_sec{
+	font-family: Roboto-Regular;
+	font-size: 1em;
+	color: #333;
+}
+.tex_sec_sec{
+	font-family: Roboto-Regular;
+	font-size: 1.2em;
+	color: #333;
+}
+.tex_bas_sec strong{font-family: Roboto-Bold;}
+.tex_bas_sec a{
+	color: #AA00FF;
+}
+.tex_bas_sec a:hover{
+	text-decoration: underline;
+	color: #AA00FF;
+}
+.h3_sec_gen{
+	font-family: Montserrat-bold;
+	font-size: 2em;
+	color: #666;
+}
+/*  ____________________________ GENERALES ____________________________  */
+
+/*  ____________________________ BTN DONAR ____________________________  */
+.contbtnd{
+	width: 10em;
+	position: fixed;
+	margin-top: 5.3em;
+	right: 0;
+	background-color: #9C2EF5;
+	z-index: 400;
+	border-bottom-left-radius: 3em;
+	cursor: pointer;
+}
+.btnDonar{
+	font-family: Montserrat-Medium;
+	font-size: 1.5em;
+	color: #FFF;
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+	opacity: 1;
+}
+.btnDonar:hover{
+	color: #FFF;
+	opacity: .8;
+}
+.vid{
+	display: none;
+}
+.areaAc{
+	background-color: red;
+	width: 10em;
+	height: 4.5em;
+	position: fixed;
+	margin-top: 4em;
+	margin-left: calc(100% - 10em);
+	z-index: 500;
+	opacity: 0;
+}
+.areaInac{
+	background-color: blue;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 399;
+	opacity: 0;
+	display: none;
+}
+.btnDonarMov{
+	width: 100%;
+	background-color: #9C2EF5;
+	color: #FFF;
+	font-family: Montserrat-Medium;
+	font-size: 1.5em;
+	padding: 1em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+}
+.btnDonarMov{
+	color: #FFF !important;
+}
+#verEsc{
+	display: block;
+}
+#verMov{
+	display: none;
+}
+/*  ____________________________ BTN DONAR ____________________________  */
+
+/*  ____________________________ MENÚ ____________________________  */
+.logo_prin{
+	width: auto;
+	height: 2em;
+}
+.lis_men{
+	margin-top: 1.4em;
+	/*text-align: right;*/
+	margin-bottom: 1em;
+	/*margin-right: 4em;*/
+	margin-left: calc(11% - 0em);
+}
+.navbar:not(.top-nav-collapse) {
+	background: #FFF !important;
+}
+.lis_men li {
+    display: inline-block !important;
+}
+.lis_men li a{
+	font-family: Montserrat-Regular;
+	background-color: #FFF;
+    color: #333;
+    font-size: 1em;
+    padding: .5em;
+    border-radius: 3px;
+    display: inline-block !important;
+}
+.mar_men_iz_esp{
+	margin-left: 1em;
+}
+.lis_men li a:hover{
+	background-color: #EFEFEF;
+}
+/*  ____________________________ MENÚ ____________________________  */
+
+
+/*  ____________________________ SLIDE ____________________________  */
+.rgba-black-light{
+	background-color: rgba(0,0,0,0.8);
+}
+.view .mask{
+	top: 50%;
+	height: 40%;
+}
+.carousel-indicators{
+	margin-bottom: 0;
+}
+.carousel .carousel-indicators li{
+	width: 1em;
+	height: 1em;
+	margin: 1em;
+}
+.carousel-indicators .active{
+	margin-top: 1.5em !important;
+	opacity: 1;
+	background-color: #9C2EF5;
+	border: 2px solid #FFF;
+}
+.text_slide_p{
+	font-size: 1.3em;
+	color: #FFF;
+}
+.txt_slide_h1{
+	font-family: Montserrat-Regular;
+	color: #FFF;
+}
+.back_tr_n{
+	background-color: rgba(0,0,0,.3) !important;
+}
+/*  ____________________________ SLIDE ____________________________  */
+
+
+/*  ____________________________ HOME 1 ____________________________  */
+.fond_g{
+	background-color: #F2F2F2;
+}
+/*  ____________________________ HOME 1 ____________________________  */
+
+
+/*  ____________________________ HOME 2 ____________________________  */
+
+/* car 1 */
+#owl-carousel1 .owl-prev{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 15%;
+	left: -3.5em;
+}
+#owl-carousel1 .owl-prev:hover{
+	background-color: transparent !important;
+}
+#owl-carousel1 .owl-prev span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel1 .owl-prev span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+
+#owl-carousel1 .owl-next{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 15%;
+	left: 100%;
+}
+#owl-carousel1 .owl-next:hover{
+	background-color: transparent !important;
+}
+#owl-carousel1 .owl-next span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel1 .owl-next span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+/* car 1 */
+
+
+/* car */
+#owl-carousel .owl-prev{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: -15%;
+	left: -3.5em;
+}
+#owl-carousel .owl-prev:hover{
+	background-color: transparent !important;
+}
+#owl-carousel .owl-prev span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel .owl-prev span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+
+#owl-carousel .owl-next{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: -15%;
+	left: 100%;
+}
+#owl-carousel .owl-next:hover{
+	background-color: transparent !important;
+}
+#owl-carousel .owl-next span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel .owl-next span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+/* car */
+
+
+/* car 2 */
+#owl-carousel2 .owl-prev{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 15%;
+	left: -3.5em;
+}
+#owl-carousel2 .owl-prev:hover{
+	background-color: transparent !important;
+}
+#owl-carousel2 .owl-prev span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel2 .owl-prev span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+
+#owl-carousel2 .owl-next{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 15%;
+	left: 100%;
+}
+#owl-carousel2 .owl-next:hover{
+	background-color: transparent !important;
+}
+#owl-carousel2 .owl-next span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#owl-carousel2 .owl-next span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+/* car 2 */
+
+
+.btn_carousel{
+	min-height: 100px;
+	cursor: pointer;
+	opacity: 1;
+}
+.btn_carousel:hover{
+	min-height: 100px;
+	cursor: pointer;
+	opacity: .8;
+}
+.il_mod{
+	height: 100%;
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+.text_modProg{
+	border-left: 4px solid #CCC;
+	padding: 1em;
+}
+
+.img_prog{
+	width: 60% !important;
+	height: auto;
+	margin-left: 20%;
+	margin-bottom: 1em;
+}
+.carr_pro{
+	font-size: 1.3em;
+	color: #999;
+}
+.contMod{
+	font-family: Roboto-Regular;
+	color: #999;
+}
+.modOc{
+	display: none;
+}
+/*  ____________________________ HOME 2 ____________________________  */
+
+/*  ____________________________ HOME 3 ____________________________  */
+.iz_cont{
+	/*background-image: url('../img/ind/fond_iz.jpg');*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 20em;
+}
+.de_cont{
+	background-color: #3D99DA;
+	min-height: 10em;
+	color: #FFF;
+	min-height: 20em;
+	display: flex;
+	align-items: center;
+}
+.btn_base{
+	min-width: 6em;
+	max-width: 10em;
+	background-color: #FFFFFF;
+	border: 2px solid #9C2EF5;
+	border-radius: .3em;
+	font-family: Montserrat-Medium;
+	font-size: 1.3em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_base:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+.centra_btn_base{
+	margin-left: calc(50% - 3em) !important;
+}
+/*  ____________________________ HOME 3 ____________________________  */
+
+/*  ____________________________ HOME 4 ____________________________  */
+.img_card{
+	width: 100%;
+	height: auto;
+	border-bottom: solid 3px #9C2EF5;
+}
+.p_sub_his{
+	font-family: Montserrat-Regular;
+	font-size: 1em;
+	color: #666;
+	margin-top: -.5em;
+	margin-bottom: .2em;
+}
+.btn_t_vm{
+	font-family: Montserrat-Medium;
+	font-size: 1em;
+	color: #9C2EF5;
+	padding: 1em .5em;
+	text-align: center;
+	opacity: 1;
+}
+.btn_t_vm:hover{
+	opacity: .8;
+	color: #9C2EF5;
+}
+/*  ____________________________ HOME 4 ____________________________  */
+
+/*  ____________________________ HOME 5 ____________________________  */
+.fond_az_i{
+	background-color: #3D99DA;
+	background-image: url('../img/ind/count_fon.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+}
+.formNum{
+	color: #FFF;
+	font-family: Montserrat-Bold;
+	font-size: 2.3em;
+}
+.desNum{
+	color: #FFF;
+	font-family: Montserrat-SemiBold;
+	font-size: 1.5em;
+}
+/*  ____________________________ HOME 5 ____________________________  */
+
+/*  ____________________________ HOME 6 ____________________________  */
+.card-header{
+	background-color: rgba(256,256,256,0);
+}
+.sin_sombra{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0);
+}
+.btn_cerrar_c{
+	text-align: right;
+	font-size: 2em;
+	padding: 1em;
+	cursor: pointer;
+	opacity: 1;
+}
+.btn_cerrar_c:hover{
+	opacity: .8;
+}
+.inp_contacto{
+	width: 100%;
+	height: auto;
+	padding: 1em;
+	border: 1px solid #CCC;
+	border-radius: .3em;
+}
+.btn_contacto{
+	min-width: 10em;
+	max-width: 10em;
+	margin-left: calc(100% - 10em);
+	background-color: #FFFFFF;
+	border: 2px solid #3485D1;
+	border-radius: .3em;
+	font-family: Montserrat-Medium;
+	font-size: 1.3em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_contacto:hover{
+	background-color: #3485D1;
+	color: #FFF;
+}
+/*  ____________________________ HOME 6 ____________________________  */
+
+
+
+
+
+
+
+/*  ____________________________ SECCIÓN PROGRAMAS ____________________________  */
+.sin_somb {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0);
+    border-top: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+}
+.img_titu_col{
+	width: auto;
+	height: 2em;
+}
+.titu_coll_1{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #673AB7;
+	margin-left: .5em;
+}
+.titu_coll_2{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #2979FF;
+	margin-left: .5em;
+}
+.titu_coll_3{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #3D5AFE;
+	margin-left: .5em;
+}
+.titu_coll_4{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #651FFF;
+	margin-left: .5em;
+}
+.titu_coll_5{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #AA00FF;
+	margin-left: .5em;
+}
+.titu_coll_6{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #D500F9;
+	margin-left: .5em;
+}
+.titu_coll_7{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #EA80FC;
+	margin-left: .5em;
+}
+.text_num{
+	font-family: Montserrat-Light;
+	font-size: 2em;
+	text-align: center;
+	color: #999;
+}
+.btn_con_his{
+	width: 15em;
+	background-color: #FFFFFF;
+	border: 2px solid #9C2EF5;
+	border-radius: .3em;
+	font-family: Montserrat-Medium;
+	font-size: 1.3em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+	margin-left: calc(50% - 8em);
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_con_his:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+.centra_btn_con_his{
+	margin-left: calc(50% - 8em) !important;
+}
+/*  ____________________________ SECCIÓN PROGRAMAS ____________________________  */
+
+
+
+
+/*  ____________________________ SECCIÓN - HISTORIAS ____________________________  */
+.h2_b_negro{
+	font-size: 2em;
+	font-family: Montserrat-Bold;
+	color: #333333;
+}
+.h3_b_negro{
+	font-size: 1.7em;
+	font-family: Montserrat-Bold;
+	color: #000;
+	margin-bottom: -0.3em;
+}
+.p_historias{
+	font-size: 1.2em;
+	font-family: Roboto-Light;
+	color: #000;
+}
+.p_histo_mor_f{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #673AB7;
+}
+.p_histo_mor{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #651FFF;
+}
+.p_histo_azul{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #2979FF;
+}
+.p_histo_azul_f{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #3D5AFE;
+}
+.p_histo_rosa{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #EA80FC;
+}
+.p_histo_lila{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #AA00FF;
+}
+.p_histo_magenta{
+	font-size: 1.2em;
+	font-family: Roboto-Bold;
+	color: #D500F9;
+}
+.text_hist_esp{
+	font-size: 1.5em;
+	font-family: Montserrat-Regular;
+	color: #000;
+}
+.lin_vert_mor{
+	border-left: 0.5em solid #673AB7;
+	height: 3.8em;
+}
+.cont_video{
+	width: 100%;
+	height: 30em;
+}
+
+
+
+/* car 1 */
+#car_hist1 .owl-prev{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 22%;
+	left: -3.5em;
+}
+#car_hist1 .owl-prev:hover{
+	background-color: transparent !important;
+}
+#car_hist1 .owl-prev span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#car_hist1 .owl-prev span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+
+#car_hist1 .owl-next{
+	background-color: transparent !important;
+	width: 2em;
+	height: auto;
+	position: absolute;
+	top: 22%;
+	left: 100%;
+}
+#car_hist1 .owl-next:hover{
+	background-color: transparent !important;
+}
+#car_hist1 .owl-next span{
+	background-color: transparent !important;
+	font-size: 10em;
+	color: #CCC;
+}
+#car_hist1 .owl-next span:hover{
+	font-size: 10em;
+	color: #9C2EF5;
+}
+/* car 1 */
+
+.btn_his_1{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #673AB7;
+	opacity: 1;
+}
+.btn_his_1:hover{
+	color: #673AB7;
+	opacity: .8;
+}
+.btn_his_2{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #2979FF;
+	opacity: 1;
+}
+.btn_his_2:hover{
+	color: #2979FF;
+	opacity: .8;
+}
+.btn_his_3{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #3D5AFE;
+	opacity: 1;
+}
+.btn_his_3:hover{
+	color: #3D5AFE;
+	opacity: .8;
+}
+.btn_his_4{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #651FFF;
+	opacity: 1;
+}
+.btn_his_4:hover{
+	color: #651FFF;
+	opacity: .8;
+}
+.btn_his_5{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #AA00FF;
+	opacity: 1;
+}
+.btn_his_5:hover{
+	color: #AA00FF;
+	opacity: .8;
+}
+.btn_his_6{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #D500F9;
+	opacity: 1;
+}
+.btn_his_6:hover{
+	color: #D500F9;
+	opacity: .8;
+}
+.btn_his_7{
+	position: absolute;
+	top: -1em;
+	padding: 0;
+	color: #EA80FC;
+	opacity: 1;
+}
+.btn_his_7:hover{
+	opacity: .8;
+	color: #EA80FC;
+}
+
+/*  ____________________________ SECCIÓN - HISTORIAS ____________________________  */
+
+
+
+/*  ____________________________ SECCIÓN - BLOG_NOTICIAS ____________________________  */
+
+/*  __________________ MENÚ POST Noticias __________________ */
+.text_1_menu_post_not{
+	font-size: 1em;
+	font-family: Roboto-Medium;
+	color: #000;
+}
+.img_not_card{
+	width: 100%;
+	height: auto;
+}
+.l_card_not{
+	/*border-top: 5px solid #3D5AFE;*/
+}
+.text_2_menu_post_not{
+	font-size: 1em;
+	font-family: Montserrat-SemiBold;
+	color: #666;
+}
+
+.text_3_menu_post_not{
+	font-size: 1.2em;
+	font-family: Montserrat-SemiBold;
+	color: #2DAAE1;
+}
+.text_4_menu_post_not{
+	font-size: 1em;
+	font-family: Montserrat-Light;
+	color: #666666;
+}
+.text_4_i_menu_post_not{
+	font-family: Montserrat-LightItalic;
+}
+.text_5_menu_post_not{
+	font-size: 1em;
+	font-family: Montserrat-SemiBold;
+	color: #AA00FF;
+	margin-top: -1.2em;
+}
+/*  __________________ MENÚ POST Noticias __________________ */
+
+
+/*  __________________ POST Noticias __________________ */
+.tx_1_post_not{
+	font-size: 1em;
+	font-family: Montserrat-SemiBold;
+	color: #673AB7;
+}
+.tx_2_post_not{
+	font-size: 1.5em;
+	font-family: Montserrat-SemiBold;
+	color: #2DAAE1;
+	margin-top: -0.6em;
+}
+.tx_3_post_not{
+	font-size: 1em;
+	font-family: Roboto-Light;
+	color: #666666;
+	margin-top: -1em;
+}
+.tx_4_post_not{
+	font-size: 1em;
+	font-family: Roboto-Regular;
+	color: #666666;
+}
+.icon_redes{
+	width: auto;
+	height: auto;
+}
+
+
+/*Estilo "Prueba"*/
+.cont_padre{
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cont_hijo{
+	width: auto;
+	height: auto;
+}
+
+
+/*"PARECE CORRECTO" - REVISAR*/
+.cont_padre2{
+	width: 6em;
+	height: auto;
+	margin-left: 10em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cont_hijo2{
+	width: 1.5em;
+	height: auto;
+}
+/*"PARECE CORRECTO" - REVISAR*/
+
+/*Estilo "Prueba"*/
+/*  __________________ POST Noticias __________________ */
+
+/*  ____________________________ SECCIÓN - BLOG_NOTICIAS ____________________________  */
+
+
+/*  ____________________________ SECCIÓN - CONVENIOS ____________________________  */
+.h2_conv{
+	font-size: 1.5em;
+	font-family: Montserrat-Bold;
+	color: #444;
+}
+.sel_valc_conv{
+	color: #CCC;
+}
+.sel_conv{
+	padding: 2em;
+	background-color: #F8F8F8;
+	border: 1px solid #CCC;
+	padding: 1em;
+	border-radius: 4px;
+}
+
+#resul_conv{
+	background-color: #F8F8F8;
+	border: 1px solid #CCC;
+	padding: 1em;
+	border-radius: 4px;
+}
+/*  ____________________________ SECCIÓN - CONVENIOS ____________________________  */
+
+
+
+
+/*  ____________________________ SECCIÓN - PREGUNTAS FRECUENTES ____________________________  */
+.tex_pregun{
+	font-family: Roboto-Medium;
+	font-size: 1em;
+	color: #333333;
+}
+.bullet_lila{
+	color: #AA00FF;
+}
+.link_az{
+	text-decoration: none;
+	color: #3D5AFE;
+}
+.margin_sec_collaps{
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+/*  ____________________________ SECCIÓN - PREGUNTAS FRECUENTES ____________________________  */
+
+
+
+/*  ____________________________ SECCIÓN - NOSOTROS ____________________________  */
+.img_nos{
+	width: 100%;
+	height: auto;
+}
+.fondo_nos{
+	background-color: #F8F8F8;
+}
+.text_res_nos{
+	font-family: Roboto-Regular;
+	font-size: 2em;
+	color: #666666;
+}
+.text_res_nos_mor{
+	font-family: Roboto-Regular;
+	font-size: 2em;
+	color: #673AB7;
+}
+.text_res_az{
+	font-family: Roboto-Regular;
+	font-size: 1.5em;
+	color: #2DAAE1;	
+}
+.text_res_min{
+	font-family: Roboto-Regular;
+	font-size: 1.2em;
+	color: #666666;
+}
+.text_res_nos_light{
+	font-family: Roboto-Light;
+	font-size: 3em;
+	color: #AA00FF;
+}
+.text_res_nos_bold{
+	font-family: Roboto-Bold;
+}
+.text_p_res_nos{
+	font-family: Roboto-Regular;
+	font-size: 1.2em;
+	color: #000000;
+}
+/*  ____________________________ SECCIÓN - NOSOTROS ____________________________  */
+
+
+
+/*  ____________________________ SECCIÓN - INFORMES ____________________________  */
+.titu_sec_info{
+	font-family: Montserrat-bold;
+	font-size: 2em;
+	color: #666666;
+}
+.text_retos{
+	font-family: Montserrat-bold;
+	font-size: 2em;
+	color: #2DAAE1;
+}
+.sub_retos{
+	font-family: Montserrat-bold;
+	font-size: 1.5em;
+	color: #333333;
+}
+.text_barra_az{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #2DAAE1;
+}
+.text_barra_regu{
+	font-family: Montserrat-regular;
+	font-size: 1em;
+	color: #333333;
+}
+.text_barra_bold{
+	font-family: Montserrat-bold;
+	font-size: 1em;
+	color: #333333;
+}
+.barra_1{
+	width: 1%;
+	height: 2em;
+	background: rgba(170,0,255,1);
+	background: -moz-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,0,255,1)), color-stop(100%, rgba(45,171,225,1)));
+	background: -webkit-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -o-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -ms-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: linear-gradient(to right, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+}
+.barra_2{
+	width: 1%;
+	height: 2em;
+	background: rgba(170,0,255,1);
+	background: -moz-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,0,255,1)), color-stop(100%, rgba(45,171,225,1)));
+	background: -webkit-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -o-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -ms-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: linear-gradient(to right, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+}
+.barra_3{
+	width: 1%;
+	height: 2em;	
+	background: rgba(170,0,255,1);
+	background: -moz-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,0,255,1)), color-stop(100%, rgba(45,171,225,1)));
+	background: -webkit-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -o-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -ms-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: linear-gradient(to right, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+}
+.barra_4{
+	width: 1%;
+	height: 2em;	
+	background: rgba(170,0,255,1);
+	background: -moz-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,0,255,1)), color-stop(100%, rgba(45,171,225,1)));
+	background: -webkit-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -o-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -ms-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: linear-gradient(to right, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+}
+.barra_5{
+	width: 1%;
+	height: 2em;	
+	background: rgba(170,0,255,1);
+	background: -moz-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,0,255,1)), color-stop(100%, rgba(45,171,225,1)));
+	background: -webkit-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -o-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: -ms-linear-gradient(left, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+	background: linear-gradient(to right, rgba(170,0,255,1) 0%, rgba(45,171,225,1) 100%);
+}
+.text_pie{
+	font-family: Roboto-Regular;
+	font-size: 0.8em;
+	color: #000000;
+}
+.text_relv_1{
+	font-family: Montserrat-Regular;
+	font-size: 10em;
+	color: #000000;
+}
+.text_relv_2{
+	font-family: Roboto-Regular;
+	font-size: 1.8em;
+	color: #333333;
+}
+.text_relv_3{
+	font-family: Roboto-Regular;
+	font-size: 1em;
+	color: #333333;
+}
+.acom_elem{
+	display: flex;
+	align-items: center;
+}
+.text_desc_info_a{
+	font-family: Montserrat-Medium;
+	font-size: 1em;
+	color: #2DAAE1;
+}
+.icon_desc{
+	font-size: 1.5em;
+	color: #2DAAE1;
+}
+
+
+/* /////////////////////////////////  CÍRCULOS ///////////////////////////////// */
+.container_esp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader {
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: none;
+  stroke-width: 3.5;
+  -webkit-animation-name: preloader;
+          animation-name: preloader;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transform-origin: 170px 170px;
+          transform-origin: 170px 170px;
+  will-change: transform;
+}
+circle:nth-of-type(1) {
+  stroke-dasharray: 550;
+}
+circle:nth-of-type(2) {
+  stroke-dasharray: 500;
+}
+circle:nth-of-type(3) {
+  stroke-dasharray: 450;
+}
+circle:nth-of-type(4) {
+  stroke-dasharray: 300;
+}
+circle:nth-of-type(1) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+circle:nth-of-type(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+circle:nth-of-type(3) {
+  -webkit-animation-delay: -0.45s;
+  -moz-animation-delay:  -0.45s;
+          animation-delay: -0.45s;
+}
+circle:nth-of-type(4) {
+  -webkit-animation-delay: -0.6s;
+  -moz-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+
+@-webkit-keyframes preloader {
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.t_cir{
+	font-family: Montserrat-Medium;
+	font-size: 1em;
+}
+
+/* /////////////////////////////////  CÍRCULOS ///////////////////////////////// */
+
+
+.inf_sel{
+	width: 100%;
+	height: 2em;
+	background-color: transparent;
+	border: #CCC solid 1px;
+	border-radius: 5px;
+	color: #666;
+}
+
+/*  ____________________________ SECCIÓN - INFORMES ____________________________  */
+
+
+
+
+/*  ____________________________ SECCIÓN - DONACIÓN ____________________________  */
+.altura_cien{
+	height: 100%;
+}
+.col_fija{
+	position: fixed;
+	right: 0;
+}
+.fondo_col_2{
+	background-color: #FFFFFF;
+}
+.text_tit{
+	font-family: Montserrat-Bold;
+	font-size: 1.5em;
+	color: #333333;
+}
+/*  _______________ FORMULARIO PARTE 1 _______________*/
+.btn_don_uni{
+	width: 100%;
+	background-color: #FFFFFF;
+	border: 2px solid #9C2EF5;
+	border-radius: 0.3em;
+	font-family: Montserrat-SemiBold;
+	font-size: 1em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_don_uni:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+.centra_btn_don_uni{
+	margin-left: calc(50% - 3em) !important;
+}
+.btn_don_men{
+	width: 100%;
+	background-color: #FFFFFF;
+	border: 2px solid #9C2EF5;
+	border-radius: 0.3em;
+	font-family: Montserrat-SemiBold;
+	font-size: 1em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_don_men:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+.text_item_1{
+	font-family: Montserrat-SemiBold;
+	font-size: 1em;
+	color: #333333;
+}
+.btn_monto_don{
+	width: 100%;
+	background-color: #F8F8F8;
+	border: 1px solid #CCCCCC;
+
+	font-family: Montserrat-SemiBold;
+	font-size: 1em;
+	color: #666;
+	text-align: center;
+	padding: 0.5em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_monto_don:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+.cont_padre_monto{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.otra_cantidad{
+	width: 100%;
+	height: 3em;
+	background-color: transparent;
+	border: 1px solid #666666;
+	border-radius: 0.3em;
+	font-family: Montserrat-Regular;
+	font-size: 1em;
+	color: #666666;
+}
+.fond_img_iz_1{
+	background-image: url('../img/don/img_01.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.fond_img_iz_2{
+	background-color: #CCC;
+}
+.btn_continuar{
+	width: 100%;
+	background-color: #FFFFFF;
+	border: 2px solid #9C2EF5;
+	border-radius: 0.3em;
+	font-family: Montserrat-SemiBold;
+	font-size: 1em;
+	color: #666;
+	text-align: center;
+	padding: 1em;
+	cursor: pointer;
+
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+}
+.btn_continuar:hover{
+	background-color: #9C2EF5;
+	color: #FFF;
+}
+/*  _______________ FORMULARIO PARTE 1 _______________*/
+
+/*  _______________ FORMULARIO PARTE 2 _______________*/
+.margen_iz{
+	margin-left: 1.5em;"
+}
+.leyenda_acep{
+	font-family: Montserrat-Light;
+	font-size: 0.8em;
+	color: #000000;
+}
+/*  _______________ FORMULARIO PARTE 2 _______________*/
+
+
+/*  _______________ MODAL _______________*/
+.text_p_modal{
+	font-family: Roboto-Regular;
+	font-size: 1.2em;
+	color: #333333;
+}
+.cierre_modal{
+	width: 5%;
+	margin-left: 90%;
+}
+/*  _______________ MODAL _______________*/
+/*  ____________________________ SECCIÓN - DONACIÓN ____________________________  */
+
+
+
+
+
+/*  ____________________________ FOOTER ____________________________  */
+.cont_pie{
+	background-color: #000;
+	padding: 1em;
+}
+.logo_foo{
+	width: 10em;
+	height: auto;
+}
+.text_foot{
+	color: #CCC;
+	font-family: Montserrat-Light;
+	font-size: .7em;
+}
+.text_foot_c{
+	color: #CCC;
+	font-size: .9em;
+	margin-top: 1em;
+}
+.red_fo{
+	color: #3D99DA;
+	font-size: 1.3em;
+	padding: .4em;
+	margin: .3em;
+	opacity: 1;
+}
+.red_fo:hover{
+	color: #3D99DA;
+	opacity: .8;
+}
+.btn_ap{
+	font-family: Montserrat-Light;
+	color: #CCC;
+	font-size: 1em;
+	opacity: 1;
+}
+.btn_ap:hover{
+	color: #CCC;
+	opacity: .8;
+}
+/*  ____________________________ FOOTER ____________________________  */
+
+
+/*  _________________________________________ RESPONSIVE _________________________________________  */
+@media (max-width: 1200px){
+/*  ____________________________ INDEX ____________________________  */
+	.owl-prev{
+		display: none !important;
+	}
+	.owl-next{
+		display: none !important;
+	}
+	#verEsc{
+		display: none;
+	}
+	#verMov{
+		display: block;
+	}
+/*  ____________________________ INDEX ____________________________  */
+}
+@media (max-width: 850px) and (min-width: 800px){
+	.navbar:not(.top-nav-collapse) {
+		background: #FFF !important;
+	}
+	#verEsc{
+		display: none;
+	}
+	#verMov{
+		display: block;
+	}
+}
+@media (max-width: 760px) {
+	.lis_men{
+		text-align: right;
+		margin-top: 0;
+		margin-right: 1em;
+	}
+	.lis_men li {
+		display: block !important;
+		text-align: center;
+	}
+	.mar_men_iz_esp{
+		margin-left: 0;
+	}
+
+
+
+/* ___________________________ BTN DONAR ___________________________ */
+
+	#verEsc{
+		display: none;
+	}
+	#verMov{
+		display: block;
+	}
+/* ___________________________ HISTORIAS ___________________________ */
+	
+	.btnDonarMov{
+		font-size: 1em !important;
+		font-weight: bold;
+		padding: 1em auto !important;
+	}
+	.bar{
+		margin-top: 1em;
+	}
+	.icon_responsive{
+		width: auto;
+		height: 1.5em;
+	}
+/* ___________________________ HISTORIAS ___________________________ */
+
+
+/* ___________________________ PROGRAMAS ___________________________ */
+	.img_titu_col{
+		width: 1em;
+		height: auto;
+	}
+	.titu_coll_1{
+		font-size: .58em;
+	}
+	.titu_coll_2{
+		font-size: .58em;
+	}
+	.titu_coll_3{
+		font-size: .58em;
+	}
+	.titu_coll_4{
+		font-size: .58em;
+	}
+	.titu_coll_5{
+		font-size: .58em;
+	}
+	.titu_coll_6{
+		font-size: .58em;
+	}
+	.titu_coll_7{
+		font-size: .58em;
+	}
+	.btn_con_his{
+		width: 10em;
+		margin-left: calc(50% - 5em);
+	}
+/* ___________________________ PROGRAMAS ___________________________ */
+
+
+/* ___________________________ BTN DONAR ___________________________ */
+
+
+/* ___________________________ INDEX ___________________________ */
+	.txt_slide_h1{
+		font-size: 1.5em !important;
+	}
+	.text_slide_p{
+		font-size: 1em !important;
+	}
+	.owl-prev{
+		display: none !important;
+	}
+	.owl-next{
+		display: none !important;
+	}
+	.img_prog{
+		width: 40% !important;
+		height: auto;
+		margin-left: 30% !important;
+	}
+/* ___________________________ INDEX ___________________________ */
+
+	.filter__item{
+		font-size: 1em !important;
+		margin: .2em .3em !important;
+		padding: 0 !important;
+	}
+
+/* ___________________________ FOOTER ___________________________ */
+	.logo_foo{
+		margin-left: calc(50% - 5em);
+	}
+	.text_foot{
+		text-align: center;
+	}
+	.ali_ic{
+		text-align: center;
+	}
+/* ___________________________ FOOTER ___________________________ */
+}
+/*  _________________________________________ RESPONSIVE _________________________________________  */
+
+
+
+
+
+
